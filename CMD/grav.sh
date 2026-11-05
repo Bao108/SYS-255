@@ -1,12 +1,14 @@
 #!/bin/bash
 # Install Grav CMS on Rocky Linux 9 with Apache and add some pages.
 # Run as root:  bash grav.sh
+
+# Suppress error messages
 set -e
  
 read -p "Enter a title for your site: " TITLE
 WEB=/var/www/html
  
-# Install Apache, PHP 8.2 and tools
+# Install Apache, PHP 8.3, and tools
 dnf module enable php:8.3 -y
 dnf install -y httpd php php-gd php-mbstring php-xml php-intl php-pecl-zip unzip
  
