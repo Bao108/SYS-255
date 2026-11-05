@@ -7,7 +7,7 @@ read -p "Enter a title for your site: " TITLE
 WEB=/var/www/html
  
 # Install Apache, PHP 8.2 and tools
-dnf module enable php:8.2 -y
+dnf module enable php:8.3 -y
 dnf install -y httpd php php-gd php-mbstring php-xml php-intl php-pecl-zip unzip
  
 # Download Grav (with admin panel) into the web root
