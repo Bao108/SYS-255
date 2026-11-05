@@ -36,14 +36,14 @@ page 05.contact  "Contact"  "Questions about this site? Ask the site administrat
  
 # Blog section with posts:  post <folder> <title> <date> <text>
 mkdir -p $WEB/user/pages/02.blog
-printf -- "---\ntitle: Blog\ncontent:\n    items: '@self.children'\n    order:\n        by: date\n        dir: desc\n---\n" > $WEB/user/pages/02.blog/blog.md
+printf -- "---\ntitle: Blog\ncontent:\n    items: '@self.children'\n    order:\n   dir: desc\n---\n" > $WEB/user/pages/02.blog/blog.md
 post() {
     mkdir -p $WEB/user/pages/02.blog/$1
     printf -- "---\ntitle: %s\ndate: %s\n---\n\n%s\n" "$2" "$3" "$4" > $WEB/user/pages/02.blog/$1/item.md
 }
 post setting-up-web01  "Setting Up web01"          "I gave web01 a hostname and a static IP with nmcli, then pointed DNS at the domain controller."
-post joining-ad        "Joining Active Directory"  "I joined web01 to the AD domain with realm, so I can log in with my domain admin account."
-post installing-grav   "Installing Grav CMS"       "Logged in with my AD account, I installed Apache, PHP 8.2 and Grav with one Bash script." 
+post joining-ad        "Joining Active Directory"  "I joined web01 to the AD domain with realm. I can log in with my domain admin account."
+post installing-grav   "Installing Grav CMS"       "Logged in with my AD account, I installed Apache, PHP 8.3 and Grav with one Bash script." 
 
 # Permissions, SELinux, firewall, start Apache
 chown -R apache:apache $WEB
