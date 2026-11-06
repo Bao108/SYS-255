@@ -34,7 +34,7 @@ page() {
 page 01.home     "Home"     "Welcome to $TITLE, running Grav CMS with Apache."
 page 03.about    "About"    "Grav is a flat-file CMS. Every page is a Markdown file, so there is no database."
 page 04.services "Services" "Web hosting with Apache Bash script."
-page 05.contact  "Contact"  "Questions about this site? Ask the site administrator."
+page 05.contact  "Contact"  "Questions about this site? Ask the site administrator, but the administrator only responds with steganography methods.
 
 # Blog section with posts:  post <folder> <title> <text>
 mkdir -p $WEB/user/pages/02.blog
