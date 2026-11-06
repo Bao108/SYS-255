@@ -33,7 +33,7 @@ page() {
 }
 page 01.home     "Home"     "Welcome to $TITLE, running Grav CMS with Apache."
 page 03.about    "About"    "Grav is a flat-file CMS. Every page is a Markdown file, so there is no database."
-page 04.services "Services" "Web hosting with Apache Bash script."
+page 04.services "Services" "No Services are currently offered until I can afford to buy my own domain."
 page 05.contact  "Contact"  "Questions about this site? Ask the site administrator, but the administrator only responds with steganography methods.
 
 # Blog section with posts:  post <folder> <title> <text>
@@ -45,7 +45,7 @@ post() {
 }
 post setting-up-web01  "Setting Up web01"          "I gave web01 a hostname and a static IP with nmcli, then pointed DNS at the domain controller."
 post joining-ad        "Joining Active Directory"  "I joined web01 to the AD domain with realm. I can log in with my domain admin account."
-post installing-grav   "Installing Grav CMS"       "Logged in with my AD account, I installed Apache, PHP 8.3 and Grav with one Bash script."
+post installing-grav   "Installing Grav CMS"       "Logged in with my AD account, I installed Apache, PHP 8.3, and Grav with one Bash script."
 
 # Permissions, SELinux, firewall, start Apache
 chown -R apache:apache $WEB
